@@ -1,0 +1,174 @@
+.App {
+  padding-top: 50px;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* Cool gradient background */
+  color: #FFF; /* Bright text color for better readability */
+  height: 100vh; /* Adjust to 100vh for full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #000; /* Text shadow for a pop effect */
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+button{
+  background-color: #1DB954;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #189C4A;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover for a lifted effect */
+}
+.navbar {
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  background-color: #1db954; /* Spotify green or your chosen color */
+  z-index: 1000; /* Ensure it's above other content */
+  /* Rest of your styling */
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navbar li {
+  /* Styling for navbar items */
+}
+.navbar a {
+  color: white; /* Or any other color you prefer */
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  position: relative; /* Needed for the pseudo-elements to position correctly */
+  overflow: hidden; /* Ensures pseudo-elements are clipped to the anchor tag's area */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+  /* Add a text shadow to create an outline effect */
+  
+}
+
+/* Hover effect */
+.navbar a:hover,
+.navbar a:focus { /* Also apply to focus for accessibility */
+  color: #0f0; /* Change text color on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Slight background highlight */
+}
+
+/* Cool underline effect on hover */
+.navbar a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover::before,
+.navbar a:focus::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+/* Additional styling */
+
+
+.tracks {
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+  overflow: auto;
+}
+
+.tracks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tracks li {
+  margin-bottom: 10px;
+}
+
+/* Hyperlink Styling */
+a {
+  color: #4FC3F7; /* Cool blue color for links */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #29B6F6; /* Slightly darker blue on hover */
+  text-decoration: underline; /* Underline on hover for better interactivity */
+}
+
+/* Input Field Styling */
+input[type='number'], input[type='text'] {
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #1DB954; /* Spotify green border */
+  border-radius: 5px;
+  outline: none; /* Removes the default focus outline */
+  transition: border-color 0.3s ease;
+}
+
+input[type='number']:focus, input[type='text']:focus {
+  border-color: #4FC3F7; /* Change border color on focus */
+}
+setbpm {
+  background-color: #1DB954;
+  border: none;
+  color: white;
+  padding: 5px 15px;  
+  text-align: center; 
+  text-decoration: none;  
+  display: inline-block; 
+  font-size: 1.2em; 
+  margin: 4px 2px;  
+  cursor: pointer; 
+  border-radius: 50px; 
+  transition: background-color 0.3s ease; 
+}
+setbpm:hover { 
+  background-color: #189C4A; 
+}
+

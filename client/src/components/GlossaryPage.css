@@ -1,0 +1,41 @@
+.glossary {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .glossary h1,
+  .glossary h2,
+  .glossary h3 {
+    color: green;
+  }
+  
+  .glossary h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .glossary h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+  
+  .glossary p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .glossary a {
+    color: #1db954;
+    text-decoration: none;
+  }
+  
+  .glossary .section {
+    border-left: 3px solid #1db954;
+    margin: 2rem 0;
+    padding-left: 1rem;
+  }
+  
+  /* Continue scoping additional styles as needed */
+  
