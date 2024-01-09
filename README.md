@@ -20,7 +20,7 @@ Splitify is a web application that enhances the Spotify experience by providing 
 - Additional Libraries: Axios, Cookie-Session, Helmet, HPP, CSURF
 
 ## Technical Architecture
-https://github.com/rohangavankar/Splitify/assets/70171824/19c5a159-b8fd-49a3-a4f2-e2ed4146462e
+![alt text](https://github.com/rohangavankar/Splitify/assets/70171824/19c5a159-b8fd-49a3-a4f2-e2ed4146462e)
 
 ## Setup and Installation
 ### Prerequisites
